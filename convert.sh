@@ -1,7 +1,9 @@
 #!/bin/bash -l
 
+# Calculate # of lines
 N="$(wc -l $1 | cut -d" " -f1)"
 
+# Figure out the height
 HEIGHT="$(($N*25))"
 
 echo 'text 15,15 "' > tmp
